@@ -1,1 +1,1 @@
-export const SERVICES_URL = 'http://localhost:3000/api';
+export const SERVICES_URL = 'https://movies-and-people.herokuapp.com/api';
