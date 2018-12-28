@@ -1,3 +1,64 @@
-<p>
-  person works!
-</p>
+<h1>
+  {{ person.person.first_name + ' ' + person.person.last_name }} 
+</h1>
+
+
+<h3>Movies as director</h3>
+<table class="table">
+  <thead>
+      <tr>
+        <th>Title</th>
+        <th>Release year</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of person.movies_as_director">
+      <td>
+        {{ movie.title }}
+      </td>
+      <td>
+        {{ movie.release_year }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Movies as producer</h3>
+<table class="table">
+  <thead>
+      <tr>
+        <th>Title</th>
+        <th>Release year</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of person.movies_as_producer">
+      <td>
+        {{ movie.title }}
+      </td>
+      <td>
+        {{ movie.release_year }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Movies as actor or actress</h3>
+<table class="table">
+  <thead>
+      <tr>
+        <th>Title</th>
+        <th>Release year</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of person.movies_as_actor_or_actress">
+      <td>
+        {{ movie.title }}
+      </td>
+      <td>
+        {{ movie.release_year }}
+      </td>
+    </tr>
+  </tbody>
+</table>

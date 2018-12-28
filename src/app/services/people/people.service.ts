@@ -28,4 +28,9 @@ export class PeopleService {
      return this.http.get(url);
    }
 
+   getPerson(id: string) {
+     let url = SERVICES_URL + '/people/' + id;
+     return this.http.get(url);
+   }
+
 }

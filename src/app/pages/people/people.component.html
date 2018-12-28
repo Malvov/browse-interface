@@ -6,6 +6,7 @@
       <th>First name</th>
       <th>Last name</th>
       <th>Aliases</th>
+      <td></td>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,11 @@
       </td>
       <td>
         {{ person.aliases }}
+      </td>
+      <td>
+          <a [routerLink]="['/people', person.id]" routerLinkActive="router-link-active"  class="btn btn-light">
+            <i class="fa fa-eye"></i>
+          </a>
       </td>
     </tr>
   </tbody>
