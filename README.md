@@ -2,8 +2,9 @@
 
 Frontend for Movies and People API
 
-[GitHub](https://github.com/Malvov/movies_and_people_api)
-[Heroku](http://movies-and-people.herokuapp.com/)
+[GitHub API](https://github.com/Malvov/movies_and_people_api)
+[API HEROKU](http://movies-and-people.herokuapp.com/)
+[Interface live](https://browse-interface.herokuapp.com)
 
 ## Development server
 
