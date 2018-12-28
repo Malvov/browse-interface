@@ -1,0 +1,75 @@
+<h1>
+    {{ movie.title + ' ' + movie.release_year }} 
+</h1>
+  
+<h3>Directors</h3>
+<table class="table">
+  <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Aliases</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let director of movie.directors">
+      <td>
+        {{ director.first_name }}
+      </td>
+      <td>
+        {{ director.last_name }}
+      </td>
+      <td>
+        {{ director.aliases }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Casting</h3>
+<table class="table">
+  <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Aliases</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let actorOrActress of movie.casting">
+      <td>
+        {{ actorOrActress.first_name }}
+      </td>
+      <td>
+        {{ actorOrActress.last_name }}
+      </td>
+      <td>
+        {{ actorOrActress.aliases }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Producers</h3>
+<table class="table">
+  <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Aliases</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producer of movie.casting">
+      <td>
+        {{ producer.first_name }}
+      </td>
+      <td>
+        {{ producer.last_name }}
+      </td>
+      <td>
+        {{ producer.aliases }}
+      </td>
+    </tr>
+  </tbody>
+</table>
